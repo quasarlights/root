@@ -1,0 +1,431 @@
+/*GENERAL SETTING*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+a{
+    
+    text-decoration: none;
+    font-weight: 500;    
+}
+
+p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    margin-top: 10px;
+}
+
+span{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px
+}
+h2{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 50px;
+}
+
+body{
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+/*BARRA DE NAVEGACION*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    width: 100vw;
+}
+
+#hamburgMenu {
+    display: none;
+    font-size: 20px;
+}
+
+header nav ul{
+    display: flex;
+    list-style-type: none;
+}
+
+header nav ul li{
+    color: #242E52;
+    margin-left: 30px;
+}
+
+header img{
+    margin-left: 46px;
+}
+
+header .button{
+    margin-right: 46px;
+}
+
+/*HOME*/
+main section.home{
+    height: calc(100vh - 122px);
+    display: flex;
+}
+
+main section.home article.title{
+    margin-right: 140px;
+    margin-left: 76px;
+    width: auto;
+}
+
+main section.home h1{
+    font-weight: 700;
+    font-size: 58px;
+    
+}
+
+main section.home article.title p{
+    margin-right: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+main section.home article.grafics{
+    margin-right: 76px;
+    width: 50%;
+    height: auto;
+}
+
+/*SOBRE NOSOTROS*/
+main section.sobreNosotros{
+    display: flex;
+    
+    width: 100%;
+}
+
+main section.sobreNosotros article.title2{
+    margin: 50px 90px;
+}
+
+main section.sobreNosotros article.title2 h2{
+    color: #232851;
+}
+
+main section.sobreNosotros article.items{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 80%;
+}
+
+main section.sobreNosotros article.items span{
+    color: #323851;
+}
+
+
+main section.sobreNosotros article.items div.subTit{
+    display: flex;
+    align-items: center;
+    margin-top: 34px;
+}
+
+main section.sobreNosotros article.items div.subTit span{
+    margin-left: 23px;
+}
+
+main section.sobreNosotros article.items div p{
+    margin-left: 92px;
+    margin-top: 10px;
+    ;
+}
+
+
+/*TESTIMONIOS*/
+main section.testimonios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+main section.testimonios h2 {
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+main section.testimonios article.cardsBox{
+    display: flex;
+    justify-content: space-between;
+    height: 250px;
+    width: 100%;
+    background-color: #FAFAFA;
+    justify-content: space-around;
+    position: relative;
+    margin-top: 50px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 30%;
+    text-align: center;
+
+}
+
+main section.testimonios article.cardsBox article.card span{
+    margin-top: 20px;
+}
+
+main section.testimonios img.carrousel{
+    display: none;
+}
+
+main section.testimonios a{
+    margin-top: 50px;
+}
+
+/*FRAME*/
+main section.frame{
+    display: flex;
+    justify-content: space-between;
+    padding: 64px 165px;
+    align-items: center;
+    background-color: #F3613C;
+    height: 250px;
+}
+main section.frame h2{
+    width: 30%;
+    color: #FFFFFF;
+
+}
+
+/*FOOTER*/
+footer{
+    display: flex;
+    width: 100vw;
+    height: 230px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #1E1E26;
+}
+footer article.copy2{
+    display: none;
+    color: #8C8C94;
+    margin-top: 70px;
+}
+footer article.imagenes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 90%;
+}
+footer article.imagenes article.iconos{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+footer article.imagenes article.iconos a.icon{
+    color: #FFFFFF;
+}
+
+footer article.linksBox{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+footer article.linksBox article.links1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90%;
+}
+
+footer article.linksBox article.links2 a.link{
+    margin: 7px;
+    color: #FFFFFF;
+}
+
+footer article.linksBox article.links1 a.link{
+    margin: 7px;
+    color: #FFFFFF;
+}
+
+footer article.linksBox article.links2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90%;
+}
+
+footer article.datos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90%;
+}
+
+footer article.datos article.input img{
+    margin-left: 10px;
+}
+footer article.datos article.copy{
+    color: #8C8C94;
+    margin-top: 70px;
+}
+
+
+/*MEDIA QUERYS*/
+
+@media (max-width: 375px) {
+    
+    header {
+        width: 100vw;
+    }
+    header img{
+        margin-left: 0;
+    }
+    
+    header nav{
+        display: none;
+    }    
+    header .button{
+        display: none;
+    }
+
+    main section.home h1{
+        font-weight: 700;
+        font-size: 40px;
+        
+    }
+    
+    
+    main section.home{
+        height: auto;
+        flex-direction: column-reverse;
+        width: 100vw;
+    }
+    main section.home article.grafics{
+        width: 90%;
+    }
+    main section.home article.grafics img{
+       width: 100vw;
+    }
+
+    #hamburgMenu {
+        display: block;
+    }
+    header{
+        justify-content: space-between;
+      
+    }
+    main section.home article.title{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 90%;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        
+    }
+    main section.home article.title p{
+        margin: 10px 30px;
+    }
+
+    main section.sobreNosotros{
+        flex-direction: column;
+        margin-top: 100px;
+    }
+    main section.sobreNosotros article.title2{
+        width: 90%;
+        text-align: center;
+        
+    }
+    main section.sobreNosotros{
+        width: 100vw;
+    }
+    main section.sobreNosotros article.items{
+        width: 90%;
+    }
+    main section.sobreNosotros article.items div p{
+        margin-left: 0;
+    }
+    main section.testimonios article.cardsBox article.anisha{
+        display: none;
+    }
+    main section.testimonios article.cardsBox article.richard{
+        display: none;
+    }
+    main section.testimonios article.cardsBox article.ali{
+        width: 100%;
+    }
+    main section.testimonios img.carrousel{
+        margin-top: 80px;
+        display: block;
+    }
+    main section.testimonios img{
+        margin-bottom: 0px;
+    }
+    main section.frame{
+        flex-direction: column;
+        padding: 50px 0;
+        height: 80vh;
+    }
+    main section.frame h2{
+        width: 70%;
+        text-align: center;
+    }
+footer{
+    flex-direction: column;
+    height: 500px;
+}
+
+footer article.linksBox{
+    width: 100vw;
+}
+footer article.imagenes{
+    flex-direction: column-reverse;
+    
+}
+footer{
+    flex-direction: column-reverse;
+    padding: 0;
+    margin: 0;
+    
+}
+footer article.copy2{
+    display: block;
+    justify-content: flex-end;
+    margin: 0;
+}
+footer article.copy{
+    display: none;
+}
+footer article.datos{
+    margin-top: 50px;
+}
+footer article.linksBox{
+    margin-top: 50px;
+}
+footer article.imagenes article.iconos{
+    margin-top: 20px;
+    font-size: 35px;
+}
+footer article.imagenes{
+    width: 80%;
+    
+}
+footer article.logo img{
+    align-items: center;
+    justify-content: center;
+    margin-left: 70px;
+}
+main section.sobreNosotros article.title2{
+    width: 100vw;
+    margin: 0;
+}
+}
+
+
